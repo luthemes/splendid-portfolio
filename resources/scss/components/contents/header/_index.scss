@@ -1,0 +1,69 @@
+//
+// Initiator ( components/contents/header/_index.scss )
+//
+// @package   Initiator
+// @copyright Copyright (C) 2019-2021. Benjamin Lu
+// @license   GNU General Public License v2 or later ( https://www.gnu.org/licenses/gpl-2.0.html )
+// @author    Benjamin Lu ( https://getbenonit.com )
+//
+
+.site-header {
+    background: #000000;
+
+    .logo-navigation {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 auto;
+        max-width: 1170px;
+
+        .site-logo {
+            a {
+                background: #000000;
+                color: #ffffff;
+                height: 2.2em;
+                margin: 0.063rem;
+                padding: 0.2em;
+                position: absolute;
+                text-decoration: none;
+                width: 2.2em;
+                z-index: 10;
+            }
+
+            .site-firstletter {
+                font-size: 1.8em;
+                font-weight: 700;
+                text-align: center;
+                text-transform: uppercase;
+
+                &:hover {
+                    background: white;
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+.header-image {
+    .site-branding {
+        padding: 10rem;
+        text-align: center;
+
+        .site-title,
+        .site-description {
+            margin: 0;
+            padding: 0;            
+        }
+
+        .site-title {
+            a {
+                color: #ffffff;
+                text-decoration: none;
+            }
+        }
+
+        .site-description {
+            color: #ffffff;
+        }
+    }
+}

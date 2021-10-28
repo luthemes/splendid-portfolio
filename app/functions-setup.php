@@ -118,3 +118,17 @@ add_action( 'after_setup_theme', function() {
 		],
 	] );
 } );
+
+add_action( 'wp_enqueue_scripts', function() {
+	$header_image = esc_url( get_theme_mod( 'header_image', get_theme_file_uri( '/public/images/header-image.jpg' ) ) );
+
+	$custom_css = "
+		.header-image {
+			background-attachment: scroll;
+			background: url( {$header_image} );
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+	";
+	wp_add_inline_style( 'splendid-portfolio-screen', $custom_css );
+} );
