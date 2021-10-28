@@ -16,7 +16,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Splendid\\Portfolio\\": "app/"
+            "Benlumia007\\SplendidPortfolio\\": "app/"
         },
 		"files":[
 			"app/framework.php",
