@@ -11,7 +11,7 @@
  * @link      https://luthemes.com/portfolio/splendid-portfolio
  */
 
-namespace Splendid\Portfolio\Menu;
+namespace Benlumia007\SplendidPortfolio\Menu;
 use Benlumia007\Backdrop\Theme\Menu\Component as MenuContract;
 
 class Component extends MenuContract {

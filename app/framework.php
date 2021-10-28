@@ -6,10 +6,10 @@
  * This is the where all the features will be added as part of the theme.
  *
  * @package   Splendid Portfolio
- * @author    Benjamin Lu ( benlumia007@gmail.com )
+ * @author    Benjamin Lu <benlumia007@gmail.com>
  * @copyright Copyright (C) 2017-2021. Benjamin Lu
  * @license   https://www.gnu.org/licenses/gpl-2.0.html
- * @link      https://luthemes.com/portfolio/silver-quantum
+ * @link      https://luthemes.com/portfolio/splendid-portfolio
  */
 
 /**
@@ -31,8 +31,8 @@ $splendid_portfolio->provider( Benlumia007\Backdrop\Template\View\Provider::clas
 /**
  * Register custom providers for the theme.
  */
-$splendid_portfolio->provider( SplendidPortfolio\Menu\Provider::class );
-$splendid_portfolio->provider( SplendidPortfolio\Sidebar\Provider::class );
+$splendid_portfolio->provider( Benlumia007\SplendidPortfolio\Menu\Provider::class );
+$splendid_portfolio->provider( Benlumia007\SplendidPortfolio\Sidebar\Provider::class );
 
 /**
  * Boot the Framework

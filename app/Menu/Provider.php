@@ -1,19 +1,20 @@
 <?php
 /**
- * Backdrop Core ( src/Tools/ServiceProvider.php )
+ * Menu Service Provider
  *
- * @package   Backdrop Core
- * @copyright Copyright (C) 2019-2021. Benjamin Lu
- * @license   GNU General PUblic License v2 or later ( https://www.gnu.org/licenses/gpl-2.0.html )
- * @author    Benjamin Lu ( https://getbenonit.com )
+ * @package   Splendid Portfolio
+ * @author    Benjamin Lu <benlumia007@gmail.com>
+ * @copyright Copyright (C) 2017-2021. Benjamin Lu
+ * @license   https://www.gnu.org/licenses/gpl-2.0.html
+ * @link      https://luthemes.com/portfolio/splendid-portfolio
  */
 
 /**
  * Define namespace
  */
-namespace Splendid\Portfolio\Menu;
+namespace Benlumia007\SplendidPortfolio\Menu;
 use Benlumia007\Backdrop\Tools\ServiceProvider;
-use Splendid\Portfolio\Menu\Component;
+use Benlumia007\SplendidPortfolio\Menu\Component;
 
 /**
  * Menu Provider

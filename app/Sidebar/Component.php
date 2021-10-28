@@ -12,7 +12,7 @@
  */
 
 
-namespace Splendid\Portfolio\Sidebar;
+namespace Benlumia007\SplendidPortfolio\Sidebar;
 use Benlumia007\Backdrop\Theme\Sidebar\Component as SidebarContract;
 
 class Component extends SidebarContract {
