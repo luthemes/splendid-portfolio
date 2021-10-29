@@ -1,0 +1,19 @@
+////
+// Default clearings
+///
+/// @group  Utilties
+/// @author Benjamin Lu <benlumia007@gmail.com>
+/// @link   https://luthemes.com/portfolio/splendid-portfolio
+////
+
+.site-container,
+.social-navigation,
+.site-header,
+.site-content {
+    &:before,
+    &:after {
+        clear: both;
+        content: "";
+        display: table;
+    }
+}

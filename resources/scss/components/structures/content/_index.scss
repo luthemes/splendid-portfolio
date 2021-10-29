@@ -1,0 +1,51 @@
+////
+/// Default content layouts.
+///
+/// @group  Components
+/// @author Benjamin Lu <benlumia007@gmail.com>
+/// @link   https://luthemes.com/portfolio/splendid-portfolio
+////
+
+.no-sidebar {
+    .content-area {
+        float: none;
+        width: 100%;
+    }
+}
+
+.left-sidebar {
+    .content-area {
+        float: none;
+        width: 100%;
+    }
+}
+
+.right-sidebar {
+    .content-area {
+        float: none;
+        width: 100%;
+    }
+}
+
+@media screen and ( min-width: 1170px ) {
+    .no-sidebar {
+        .content-area {
+            float: none;
+            width: 100%;
+        }
+    }
+    
+    .left-sidebar {
+        .content-area {
+            float: right;
+            width: 70.54673721340388%;
+        }
+    }
+    
+    .right-sidebar {
+        .content-area {
+            float: left;
+            width: 70.54673721340388%;
+        }
+    }
+}

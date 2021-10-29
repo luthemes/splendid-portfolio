@@ -124,10 +124,10 @@ add_action( 'wp_enqueue_scripts', function() {
 
 	$custom_css = "
 		.header-image {
-			background-attachment: scroll;
 			background: url( {$header_image} );
 			background-position: center;
 			background-repeat: no-repeat;
+			background-size: cover !important;
 		}
 	";
 	wp_add_inline_style( 'splendid-portfolio-screen', $custom_css );

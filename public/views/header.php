@@ -29,7 +29,7 @@
 		<div class="logo-navigation">
 			<div class="site-logo">
 				<?php $site_title = get_bloginfo( 'name' ); ?>
-                <a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
                     <div class="screen-reader-text">
                         <?php printf( esc_html__( 'Go to the home page of %1$s', 'splendid-portfolio' ), $site_title ); ?>	
                     </div>
@@ -38,9 +38,7 @@
                         $site_icon = get_site_icon_url( 270 ); ?>
                         <img class="site-icon" src="<?php echo esc_url( $site_icon ); ?>">
                     <?php } else { ?>
-                        <div class="site-firstletter" aria-hidden="true">
-                            <?php echo substr( $site_title, 0, 1 ); ?>
-                        </div>
+                        <h2 class="site-firstletter" aria-hidden="true"><?php echo substr( $site_title, 0, 1 ); ?></h2>
                     <?php } ?>
                 </a>
 			</div>
