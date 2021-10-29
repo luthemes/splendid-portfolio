@@ -31,17 +31,15 @@ if ( post_password_required() ) {
 				?>
 			</h2>
 		<?php } ?>
-		<ol class="comment-list">
+		<ul class="comment-list">
 			<?php
-				wp_list_comments(
-					array(
-						'style'       => 'ol',
-						'short_ping'  => true,
-						'avatar_size' => 70,
-					)
-				);
+				wp_list_comments( [
+					'style'       => 'ul',
+					'avatar_size' => 50,
+					'callback' => 'Benlumia007\Backdrop\Theme\Comments\Component::display_comments_list'
+				] );
 			?>
-		</ol>
+		</ul>
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) { ?>
 			<nav id="comment-nav-below" class="comment-navigation" role="navigation">
 				<div class="comment-previous"><?php previous_comments_link( '<i class="fa fa-arrow-circle-o-left"></i> ' . esc_html__( 'Older Comments', 'splendid-portfolio' ) ); ?></div>
