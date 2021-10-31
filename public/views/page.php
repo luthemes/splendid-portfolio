@@ -12,20 +12,14 @@
 <?php $engine = Benlumia007\Backdrop\App::resolve( 'view/engine' ); ?>
 <?php $engine->display( 'header' ); ?>
 	<section id="content" class="site-content">
-		<div id="layout" class="<?php echo esc_attr( get_theme_mod( 'global_layout', 'no-sidebar' ) ); ?>">
+		<div id="layout" class="<?php echo esc_attr( get_theme_mod( 'global_layout', 'left-sidebar' ) ); ?>">
 			<main id="main" class="content-area">
-				<?php
-					if ( have_posts() ) :
-						while ( have_posts() ) : the_post();
-							$engine->display( 'content/page'  );
-						endwhile;
-						the_posts_pagination();
-					else :
-							$engine->display( 'content/none' );
-					endif;
-				?>
+				<?php while ( have_posts() ) : the_post(); ?>
+					<?php $engine->display( 'content/page'  ); ?>
+				<?php endwhile; ?>
+				<?php comments_template(); ?>
 			</main>
-			<?php Benlumia007\Backdrop\Theme\Sidebar\display( 'sidebar', [ 'primary' ] ); ?>
+			<?php Benlumia007\Backdrop\Theme\Sidebar\display( 'sidebar', [ 'secondary' ] ); ?>
 		</div>
 	</section>
 <?php $engine->display( 'footer' ); ?>

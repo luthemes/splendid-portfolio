@@ -14,17 +14,16 @@
 	<section id="content" class="site-content">
 		<div id="layout" class="<?php echo esc_attr( get_theme_mod( 'global_layout', 'left-sidebar' ) ); ?>">
 			<main id="main" class="content-area">
-				<?php
-					if ( have_posts() ) :
-						while ( have_posts() ) : the_post();
-							$engine->display( 'content/single'  );
-						endwhile;
-						comments_template();
-						the_posts_pagination();
-					else :
-							Benlumia007\Backdrop\Template\get_template_part( 'content/content', 'none' );
-					endif;
+				<?php while ( have_posts() ) : the_post(); ?>
+					<?php $engine->display( 'content/single'  ); ?>
+				<?php endwhile; ?>
+				<?php 
+					the_post_navigation( [
+						'next_text' => '<span class="post-next" aria-hidden="true">' . esc_html__( 'Next', 'silver-quantum' ) . '</span><span class="post-title">%title</span>',
+						'prev_text' => '<span class="post-previous" aria-hidden="true">' . esc_html__( 'Previous', 'silver-quantum' ) . '</span><span class="post-title">%title</span>',
+					] );
 				?>
+				<?php comments_template(); ?>
 			</main>
 			<?php Benlumia007\Backdrop\Theme\Sidebar\display( 'sidebar', [ 'primary' ] ); ?>
 		</div>
