@@ -9,7 +9,12 @@
 .site-container,
 .social-navigation,
 .site-header,
-.site-content {
+.site-content,
+.content-area,
+.entry-content,
+.post-navigation,
+.posts-navigation,
+.widget-area {
     &:before,
     &:after {
         clear: both;

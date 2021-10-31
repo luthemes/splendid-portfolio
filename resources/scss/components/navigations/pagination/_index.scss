@@ -1,0 +1,96 @@
+//
+// Initiator ( components/_index.scss )
+//
+// @package   Initiator
+// @copyright Copyright (C) 2019-2021. Benjamin Lu
+// @license   GNU General Public License v2 or later ( https://www.gnu.org/licenses/gpl-2.0.html )
+// @author    Benjamin Lu ( https://getbenonit.com )
+//
+
+.pagination {
+    text-align: center;
+
+    .nav-links {
+        .page-numbers {
+            border: 0.063em solid #c3c3c3;
+            color: #333333;
+            display: inline-block;
+            padding: 0.3em 1em;
+            text-decoration: none;
+
+            &:hover {
+                background: #eeeeee;
+                color: #000000;
+                border-color: #cccccc;
+            }
+
+            &.current {
+                background: #eeeeee;
+                color: #000000;
+            }
+        }
+    }
+}
+
+.page-links {
+	margin: 1.125em 0;
+	text-align: center;
+
+    > {
+        .post-page-numbers {
+            background: #ffffff;
+            border: 0.063em solid #cccccc;
+            color: #000000;
+            padding: 0.3em 1em;
+
+            &:hover {
+                background: #eeeeee;
+                border: 0.063em solid #cccccc;
+                color: #000000;
+            }
+
+            &.current {
+                background: #eeeeee;
+                border: 0.063em solid #cccccc;
+                color: #000000;
+            }
+        }
+    }
+}
+
+.posts-navigation,
+.post-navigation {
+    .nav-links {
+        .nav-previous {
+            float: left;
+            margin: 0.5em 0;
+
+            .post-previous {
+                display: block;
+                font-size: 0.9375em;
+                font-weight: 700;
+                text-align: left;
+            }
+
+            .post-title {
+                font-size: 0.813em;
+            }
+        }
+
+        .nav-next {
+            float: right;
+            margin: 0.5em 0;
+
+            .post-next {
+                display: block;
+                font-size: 0.9375em;
+                font-weight: 700;
+                text-align: right
+            }
+
+            .post-title {
+                font-size: 0.813em;
+            }
+        }
+    }
+}

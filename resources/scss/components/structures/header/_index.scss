@@ -8,9 +8,13 @@
 //
 
 .site-content {
+    box-sizing: border-box;
     margin: 0 auto;
-    max-width: 70.875rem;
+    max-width: 72.75rem; // 1164px;
     padding: 1.125rem;
+}
 
-    
+img {
+    height: auto;
+    max-width: 100%;
 }

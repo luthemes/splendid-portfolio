@@ -1,0 +1,52 @@
+////
+/// Default single
+///
+/// @group  Components
+// @copyright Copyright (C) 2019-2021. Benjamin Lu
+// @license   GNU General Public License v2 or later ( https://www.gnu.org/licenses/gpl-2.0.html )
+// @author    Benjamin Lu ( https://getbenonit.com )
+//
+
+.single {
+    article {
+        &.post,
+        &.backdrop-portfolio {
+            box-sizing: border-box;
+            margin-bottom: 3rem;
+        
+            &.sticky {
+                background: #eeeeee;
+                padding: 1.125rem;
+            }
+        
+            .entry-header {
+                padding: 1.125rem;
+                text-align: center;
+        
+                .entry-title {
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+        
+            .entry-metadata {
+                margin: 0.2rem 0;
+                .fa-user,
+                .fa-calendar-alt,
+                .fa-comment {
+                    padding: 0 0.5rem;
+                }
+            }
+        
+            .entry-taxonomies {
+                font-size: 0.875rem;
+            }
+        }
+    }
+}
+
+
+img {
+    height: auto;
+    max-width: 100%;
+}
