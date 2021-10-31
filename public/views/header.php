@@ -30,9 +30,6 @@
 			<div class="site-logo">
 				<?php $site_title = get_bloginfo( 'name' ); ?>
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-                    <div class="screen-reader-text">
-                        <?php printf( esc_html__( 'Go to the home page of %1$s', 'splendid-portfolio' ), $site_title ); ?>	
-                    </div>
                     <?php
                     if ( has_site_icon() ) {
                         $site_icon = get_site_icon_url( 270 ); ?>
