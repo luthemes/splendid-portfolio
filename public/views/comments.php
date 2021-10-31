@@ -2,11 +2,11 @@
 /**
  * Default comments template
  *
- * @package   Initiator
- * @author    Benjamin Lu ( benlumia007@gmail.com )
- * @copyright Copyright (C) 2019-2021. Benjamin Lu
+ * @package   Splendid Portfolio
+ * @author    Benjamin Lu <benlumia007@gmail.com>
+ * @copyright Copyright (C) 2017-2021. Benjamin Lu
  * @license   https://www.gnu.org/licenses/gpl-2.0.html
- * @link      https://github.com/benlumia007/initiator
+ * @link      https://luthemes.com/portfolio/splendid-portfolio
  */
 ?>
 
@@ -35,7 +35,7 @@ if ( post_password_required() ) {
 			<?php
 				wp_list_comments( [
 					'style'       => 'ul',
-					'avatar_size' => 50,
+					'avatar_size' => 45,
 					'callback' => 'Benlumia007\Backdrop\Theme\Comments\Component::display_comments_list'
 				] );
 			?>
