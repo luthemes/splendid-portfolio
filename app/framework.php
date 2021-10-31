@@ -31,6 +31,7 @@ $splendid_portfolio->provider( Benlumia007\Backdrop\Template\View\Provider::clas
 /**
  * Register custom providers for the theme.
  */
+$splendid_portfolio->provider( Benlumia007\SplendidPortfolio\Admin\Provider::class );
 $splendid_portfolio->provider( Benlumia007\SplendidPortfolio\Customize\Layouts\Provider::class );
 $splendid_portfolio->provider( Benlumia007\SplendidPortfolio\Menu\Provider::class );
 $splendid_portfolio->provider( Benlumia007\SplendidPortfolio\Sidebar\Provider::class );
