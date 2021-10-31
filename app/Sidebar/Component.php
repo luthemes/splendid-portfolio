@@ -25,6 +25,10 @@ class Component extends SidebarContract {
             'secondary' => [
                 'name' => esc_html__( 'Secondary Sidebar', 'splendid-portfolio' ),
                 'desc' => esc_html__( 'test', 'splendid-portfolio' ),
+            ],
+            'portfolio' => [
+                'name' => esc_html__( 'Portoflio Sidebar', 'splendid-portfolio' ),
+                'desc' => esc_html__( 'test', 'splendid-portfolio' ),
             ]
         ];
     }
