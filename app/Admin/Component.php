@@ -43,8 +43,8 @@ class Component extends AdminContract {
 
 	public function tabs( $current = 'introduction' ) {
 		$tabs = [
-            'introduction' => esc_html__( 'Introduction', 'ecclesiastical' ),
-            'theme_information' => esc_html__( 'Theme Information', 'ecclesiastical' ),
+            'introduction' => esc_html__( 'Introduction', 'splendid-portfolio' ),
+            'theme_information' => esc_html__( 'Theme Information', 'splendid-portfolio' ),
         ];
 
 		$admin_nonce = wp_create_nonce( 'admin_nonce' );
@@ -87,19 +87,19 @@ class Component extends AdminContract {
 	}
 
 	public function introduction() { ?>
-		<h2 class="admin-title"><?php esc_html_e( 'Welcome', 'ecclesiastical' ); ?></h2>
-		<?php esc_html_e( 'Hope you are enjoying the theme. ', 'ecclesiastical' ); ?>
-		<h2 class="admin-title"><?php esc_html_e( 'Recommended Plugins', 'ecclesiastical' ); ?></h2>
+		<h2 class="admin-title"><?php esc_html_e( 'Welcome', 'splendid-portfolio' ); ?></h2>
+		<?php esc_html_e( 'Hope you are enjoying the theme. ', 'splendid-portfolio' ); ?>
+		<h2 class="admin-title"><?php esc_html_e( 'Recommended Plugins', 'splendid-portfolio' ); ?></h2>
 		<ul>
-			<li><a href="<?php esc_url( 'https://wordpress.org/plugins/regenerate-thumbnails' ); ?>"><?php esc_html_e( 'Regenerate Thumbnails', 'ecclesiastical' ); ?></a></li>
+			<li><a href="<?php esc_url( 'https://wordpress.org/plugins/regenerate-thumbnails' ); ?>"><?php esc_html_e( 'Regenerate Thumbnails', 'splendid-portfolio' ); ?></a></li>
 		</ul>
 	<?php }
 
     public function theme_information() { ?>
-		<h2 class="admin-title"><?php esc_html_e( 'Theme Info', 'ecclesiastical' ); ?></h2>
+		<h2 class="admin-title"><?php esc_html_e( 'Theme Info', 'splendid-portfolio' ); ?></h2>
 		<ul>
-			<li><?php echo esc_html( __('Name: ', 'ecclesiastical' ) . $this->theme_info->name ); ?></li>
-			<li><?php echo esc_html( __('Version: ', 'ecclesiastical' ) . $this->theme_info->version ); ?></li>
+			<li><?php echo esc_html( __('Name: ', 'splendid-portfolio' ) . $this->theme_info->name ); ?></li>
+			<li><?php echo esc_html( __('Version: ', 'splendid-portfolio' ) . $this->theme_info->version ); ?></li>
 		</ul>
     <?php }
 

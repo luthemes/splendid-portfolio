@@ -19,8 +19,8 @@
 				<?php endwhile; ?>
 				<?php 
 					the_post_navigation( [
-						'next_text' => '<span class="post-next" aria-hidden="true">' . esc_html__( 'Next', 'silver-quantum' ) . '</span><span class="post-title">%title</span>',
-						'prev_text' => '<span class="post-previous" aria-hidden="true">' . esc_html__( 'Previous', 'silver-quantum' ) . '</span><span class="post-title">%title</span>',
+						'next_text' => '<span class="post-next" aria-hidden="true">' . esc_html__( 'Next', 'splendid-portfolio' ) . '</span><span class="post-title">%title</span>',
+						'prev_text' => '<span class="post-previous" aria-hidden="true">' . esc_html__( 'Previous', 'splendid-portfolio' ) . '</span><span class="post-title">%title</span>',
 					] );
 				?>
 				<?php comments_template(); ?>

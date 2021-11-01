@@ -17,8 +17,8 @@
                 if ( have_posts() ) :
                     $engine->display( 'content/archive/portfolio' );
                     the_posts_navigation( array(
-                        'prev_text' => '<span class="post-previous" aria-hidden="true">' . esc_html__( 'Older', 'camaraderie' ) . '</span>' . '<span class="post-title">Projects</span>',
-                        'next_text' => '<span class="post-next" aria-hiddent="true">' . esc_html__( 'Newer', 'camaraderie' ) . '</span>' . '<span class="post-title">Projects</span>',
+                        'prev_text' => '<span class="post-previous" aria-hidden="true">' . esc_html__( 'Older', 'splendid-portfolio' ) . '</span>' . '<span class="post-title">Projects</span>',
+                        'next_text' => '<span class="post-next" aria-hiddent="true">' . esc_html__( 'Newer', 'splendid-portfolio' ) . '</span>' . '<span class="post-title">Projects</span>',
                     ) );
                 else :
                     $engine->display( 'content/404/none');
