@@ -24,15 +24,15 @@
 
         .left-sidebar {
             .content-area {
-                float: right;
-                width: 68.728522336769759%;
+                float: none;
+                width: 100%;
             }
         }
 
         .right-sidebar {
             .content-area {
-                float: left;
-                width: 68.728522336769759%;
+                float: none;
+                width: 100%;
             }
         }
     }
@@ -49,15 +49,52 @@
     
     .left-sidebar {
         .content-area {
-            float: right;
-            width: 68.728522336769759%;
+            float: none;
+            width: 100%;
         }
     }
 
     .right-sidebar {
         .content-area {
-            float: left;
-            width: 68.728522336769759%;
+            float: none;
+            width: 100%;
+        }
+    }
+}
+
+@media ( min-width: 769px ) {
+    .home {
+        &.blog {
+            .left-sidebar {
+                .content-area {
+                    float: right;
+                    width: 68.728522336769759%;
+                }
+            }
+        
+            .right-sidebar {
+                .content-area {
+                    float: left;
+                    width: 68.728522336769759%;
+                }
+            }
+        }
+    }
+
+    .single,
+    .page {
+        .left-sidebar {
+            .content-area {
+                float: right;
+                width: 68.728522336769759%;
+            }
+        }
+    
+        .right-sidebar {
+            .content-area {
+                float: left;
+                width: 68.728522336769759%;
+            }
         }
     }
 }

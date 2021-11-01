@@ -12,6 +12,10 @@
             &.post {
                 box-sizing: border-box;
                 margin-bottom: 3rem;
+
+                &:last-of-type{
+                    margin-bottom: 1.125rem;
+                }
             
                 &.sticky {
                     background: #eeeeee;
@@ -19,7 +23,6 @@
                 }
             
                 .entry-header {
-                    padding: 1.125rem;
                     text-align: center;
             
                     .entry-title {

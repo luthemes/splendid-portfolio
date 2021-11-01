@@ -63,7 +63,8 @@ mix.options( {
  *
  * @link https://laravel.com/docs/5.6/mix#working-with-scripts
  */
-mix.js( `${devPath}/js/app.js`, 'assets/js' );
+mix.js( `${devPath}/js/app.js`, 'assets/js' )
+   .js( `${devPath}/js/navigation.js`, 'assets/js' );
 
 /*
  * Compile CSS. Mix supports Sass, Less, Stylus, and plain CSS, and has functions

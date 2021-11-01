@@ -17,14 +17,14 @@ use Benlumia007\Backdrop\Theme\Menu\Component as MenuContract;
 class Component extends MenuContract {
     public function menus() {
         return [
-            'primary'   => esc_html__( 'Primary Sidebar', 'splendid-portfolio' ),
-            'secondary' => esc_html__( 'Secondary Sidebar', 'splendid-portfolio' ),
+            'primary'   => esc_html__( 'Primary Navigation', 'splendid-portfolio' ),
+            'secondary' => esc_html__( 'Secondary Navigation', 'splendid-portfolio' ),
             'social'    => esc_html__( 'Social Navigation', 'splendid-portfolio' )
         ];
     }
 
 	public function enqueue() {
-		wp_enqueue_script( 'splendid-portfolio-navigation', get_theme_file_uri( 'public/assets/js/app.js' ), ['jquery'], '1.0.0', true );
+		wp_enqueue_script( 'splendid-portfolio-navigation', get_theme_file_uri( 'public/assets/js/navigation.js' ), ['jquery'], '1.0.0', true );
 		wp_localize_script( 'splendid-portfolio-navigation', 'splendidPortfolioScreenReaderText', [
             'expand'   => '<span class="screen-reader-text">' . esc_html__( 'expand child menu', 'splendid-portfolio' ) . '</span>',
 			'collapse' => '<span class="screen-reader-text">' . esc_html__( 'collapse child menu', 'splendid-portfolio' ) . '</span>',
