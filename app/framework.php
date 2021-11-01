@@ -37,6 +37,16 @@ $splendid_portfolio->provider( Benlumia007\SplendidPortfolio\Menu\Provider::clas
 $splendid_portfolio->provider( Benlumia007\SplendidPortfolio\Sidebar\Provider::class );
 
 /**
+ * The Backdrop Post Type is optional. This should only be activate if the Backdrop Post Type
+ * Plugin is installed and activated. 
+ */
+if ( ! apply_filters( 'splendid/portfolio/type/portfolio', false ) ) {
+    if ( class_exists( Benlumia007\Backdrop\PostTypes\Contracts\Types\Type::class ) ) {
+        $splendid_portfolio->provider( Benlumia007\SplendidPortfolio\Portfolio\Provider::class );
+    }
+}
+
+/**
  * Boot the Framework
  */
 $splendid_portfolio->boot();
