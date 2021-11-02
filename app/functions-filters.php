@@ -55,7 +55,7 @@ add_filter( 'manage_backdrop-portfolio_posts_columns', function( $defaults ) {
 		if ( $key === 'title' ) {
 
 			// Add 'thumbnail' after 'title'
-			$columns['riv_post_thumbs'] = esc_html__( 'Thumbnail', 'luthemes' );
+			$columns['riv_post_thumbs'] = esc_html__( 'Thumbnail', 'splendid-portfolio' );
 		}
 	}
 
