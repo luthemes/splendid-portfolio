@@ -45,11 +45,7 @@ add_action( 'backdrop/templates/register', function( $templates ) {
 	] );
 } );
 
-add_action( 'manage_backdrop-portfolio_posts_custom_column', function( $name, $id ) {
-	if ( $name === 'riv_post_thumbs' ) {
-		the_post_thumbnail( [ 250, 131 ] );
-	}
-}, 10, 2 );
+
 
 add_filter( 'manage_backdrop-portfolio_posts_columns', function( $defaults ) {
 	$columns = [];
