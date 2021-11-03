@@ -17,7 +17,7 @@
  *
  * This will create an instance of the framework allowing you to initialize the theme.
  */
-$splendid_portfolio = Benlumia007\Backdrop\booted() ? Benlumia007\Backdrop\app() : new Benlumia007\Backdrop\Framework();
+$splendid_portfolio = new Benlumia007\Backdrop\Framework();
 
 /**
  * Register default providers
