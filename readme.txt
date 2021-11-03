@@ -1,22 +1,68 @@
-=== Initiator ===
+Splendid Portfolio WordPress Theme
+================================================================================================
+Contributor: benlumia007
+Tags: custom-background, custom-header, right-sidebar
+Requres at least: 4.4
+Tested up to: 4.9.4
+Stable tag: 0.2.1
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Contributors: benlumia007
-Tags:
-Requires at least: 5.0
-Tested up to: 5.0
-Requires PHP: 5.6
-Stable tag: 1.0.0
-License: GNU General Public License v2.0 or later
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Splendid Portfolio WordPress Theme, Copyright (C) 2016, Benjamin Lu
+Splendid Portfolio is distributed under the terms of the GNU GPL
 
-Short description of the theme.
+Splendid Portfolio is a standard design with responsive capability.
 
-== Description ==
+Installation
+================================================================================================
+1. In your admin panel, go to Appearance -> Themes and click the Add New button.
+2. Click Upload and Choose File, then select the theme's ZIP file. Click Install Now.
+3. Click Activate to use your new theme right away.
 
-This file is a base template to build out your `readme.txt`, which is a requirement for WordPress.org.  If not distributing on that platform, feel free to delete.
+Customizer
+================================================================================================
+1. In your admin panel, go to Appearance -> Customize
+2. List of different types that you can modify such as
+   - Site Title Tagline
+      - Hide Display Header Text (this will hide the entire header with header text)
+3. Header Image
+   - Add Header Image
+   - Remove Header Image (When removing a header image, the default image will display).
+4. Static Front Page
+   - Front Page
+   - Blog
 
-Formatting instructions: https://make.wordpress.org/themes/2015/04/29/a-revised-readme/
 
-== Installation ==
+Description
+================================================================================================
+Splendid Portfolio is a responsive WordPress theme.
 
-== Upgrade Notice ==
+
+Frequently Asked Questions
+================================================================================================
+Not Available At the Moment
+
+Upgrade Notice
+================================================================================================
+Not Available At the Moment
+
+
+== Resources ==
+Font Awesome ( Version: 5.0 )
+Created By: Fonticons, Inc
+License: SIL OFL 1.1 and MIT License
+Source: (https://fontawesome.com/)
+
+Merriweather (Google Font)
+Designer: Sorkin Type
+License: Sil Open Font License
+Source: https://fonts.google.com/specimen/Merriweather
+
+Fira Sans (Google Font)
+Designer: Carrois Apostrophe
+License: Sil Open Font License
+Source: https://fonts.google.com/specimen/Fira+Sans
+
+Benjamin Lu (https://github.com/benlumia007/)
+Backdrop (https://github.com/benlumia007/backdrop)
+License: GPLv2 or Higher
