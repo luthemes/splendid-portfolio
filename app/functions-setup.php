@@ -132,9 +132,3 @@ add_action( 'wp_enqueue_scripts', function() {
 	";
 	wp_add_inline_style( 'splendid-portfolio-screen', $custom_css );
 } );
-
-add_action( 'manage_backdrop-portfolio_posts_custom_column', function( $name, $id ) {
-	if ( $name === 'riv_post_thumbs' ) {
-		the_post_thumbnail( [ 250, 131 ] );
-	}
-}, 10, 2 );
