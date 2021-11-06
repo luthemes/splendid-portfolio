@@ -17,7 +17,7 @@
 namespace Splendid\Portfolio;
 
 /**
- * Change the teme template path to the `public/views` folder.
+ * Change the theme template path to the `public/views` folder.
  * 
  * @since  1.0.0
  * @access public
@@ -28,7 +28,7 @@ add_filter( 'backdrop/template/path', function() {
 } );
 
 /**
- * Registers custom templates with WordPress.
+ * Registers custom templates for WordPress.
  *
  * @since  1.0.0
  * @access public
