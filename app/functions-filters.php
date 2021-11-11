@@ -36,6 +36,10 @@ add_filter( 'backdrop/template/path', function() {
  * @return void
  */
 add_action( 'backdrop/templates/register', function( $templates ) {
+	$templates->add( 'template-home.php', [
+		'label' => esc_html__( 'Home', 'splendid-portfolio' )
+	] );
+
 	$templates->add( 'template-left-sidebar.php', [
 		'label' => esc_html__( 'Left Sidebar', 'splendid-portfolio' )
 	] );
