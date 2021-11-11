@@ -14,7 +14,7 @@
 /**
  * Define namespace
  */
-namespace Splendid\Portfolio;
+namespace Benlumia007\SplendidPortfolio;
 
 /**
  * Enqueue Scripts and Styles
