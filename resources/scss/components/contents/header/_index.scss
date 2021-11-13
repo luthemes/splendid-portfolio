@@ -44,14 +44,12 @@
         padding: 10rem;
         text-align: center;
 
-        .site-title,
-        .site-description {
-            margin: 0;
-            padding: 0;            
-        }
-
         .site-title {
-            font-size: 3rem;
+            font-size: 3.125rem;
+            margin: 0;
+            padding: 0;
+            text-shadow: 0.125rem 0.125rem #000000;
+
             a {
                 color: #ffffff;
                 text-decoration: none;
@@ -60,6 +58,8 @@
 
         .site-description {
             color: #ffffff;
+            margin: 0.7rem;
+            text-shadow: 0.125rem 0.125rem #000000;
         }
     }
 }

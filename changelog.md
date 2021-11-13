@@ -1,6 +1,10 @@
 # Change Log
 
-## 1.0.1 - TBD
+## 1.0.2 - TBD
+- Make site title and site description clearer.
+
+
+## 1.0.1 - November 11, 2021
 - Add Custom Home Template.
 - Add Customizer support for Home Template
 - Add portfolio section for Home Template
