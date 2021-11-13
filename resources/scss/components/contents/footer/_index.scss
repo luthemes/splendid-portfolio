@@ -8,7 +8,16 @@
 //
 
 .site-footer {
+    background: #000000;
     line-height: 1.875rem;
     padding: 1.125rem;
     text-align: center;
+
+    .site-info {
+        color: #ffffff;
+
+        a {
+            color: #ffffff;
+        }
+    }
 }

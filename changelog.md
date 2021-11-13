@@ -1,5 +1,8 @@
 # Change Log
 
+## 1.0.3 - November 13, 2021
+- add black background to footer.
+
 ## 1.0.2 - November 12, 2021
 - Make site title and site description clearer.
 
